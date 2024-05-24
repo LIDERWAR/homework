@@ -1,0 +1,159 @@
+.header {
+    background: url('../img/decor/header-bg.png') 0 0 / cover no-repeat;
+}
+
+.header__top {
+    padding-top: 16px;
+    margin-bottom: 463px;
+}
+
+.header__logo {
+    max-width: 137px;
+    z-index: 11;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.nav__list {
+    display: flex;
+    gap: 4vh 24px;
+    transition: var(--transition);
+}
+
+
+.nav .button {
+    margin-left: 50px;
+}
+
+.nav__item {
+    color: var(--general-text-white);
+    transition: var(--transition);
+}
+
+.nav__item:hover {
+    color: var(--accent-text);
+    /* text-decoration: underline; */
+}
+
+.nav__link {
+    display: block;
+    padding: 5px 0;
+}
+
+/* ================================================= */
+
+.hero__title {
+    font-family: "NEXT ART", "Arial", sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.02em;
+    color: var(--general-text-white);
+    max-width: 1080px;
+    margin-bottom: 41px;
+}
+
+.hero {}
+
+.hero__inner {}
+
+.hero__content {}
+
+
+.hero__form {
+    background: #ffffff33;
+}
+
+.hero__form form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: end;
+    gap: 24px;
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 81px;
+}
+
+.hero__form span {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--general-text-white);
+    margin-left: 8px;
+    margin-bottom: 40px;
+}
+
+.hero__form select,
+.hero__form input {
+    border: 1px solid #e1e3e4;
+    border-radius: 8px;
+    padding: 0px 16px;
+    width: 270px;
+    height: 52px;
+    background-color: transparent;
+}
+
+.hero__form-select-place {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+input[type='date'],
+#airdatepicker {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    color: #fdfdfd;
+
+}
+input[type='date']::webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.hero__form-select-place select,
+.hero__form-date input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    color: #fdfdfd;
+}
+
+.hero__form-select-place select option {
+    color: var(--general-text);
+}
+
+.placeholder-option {
+    color: var(--general-text-white);
+}
+
+.hero__form-date {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.hero__form .button {
+    color: var(--general-bg-button-footer);
+    background: var(--general-text-white);
+    margin-right: 42px;
+}
+
+.hero__form .button:hover {
+    color: var(--general-bg-2);
+    background: var(--general-bg-button-footer);
+}

@@ -1,0 +1,78 @@
+:root {
+    --general-text: #18121e;
+    --general-text-white: #fdfdfd;
+    --general-bg: #FFF;
+    --general-bg-2: #f3f5f4;
+    --general-bg-button-footer: #1a3e3e;
+    --accent-text: #f2be22;
+    --transition: all .4s;
+}
+
+html {
+    /* scroll-behavior: smooth;
+    scroll-padding-top: 5vw; */
+}
+
+.body {
+    font-family: "Nunito Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    color: var(--general-text);
+    background: var(--general-bg);
+}
+
+.body--opened-menu {
+    overflow: hidden;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.burger-icon span {
+    display: block;
+    width: 50%;
+    height: 50%;
+    background: url('../img/icons/burger.svg') 0 0 / cover no-repeat;
+    z-index: 11;
+    transition: var(--transition);
+}
+
+.body--opened-menu .burger-icon span {
+    background: url('../img/icons/close.svg') 0 0 / cover no-repeat;
+}
+.button {
+    display: block;
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: var(--general-bg-2);
+    background: var(--general-bg-button-footer);
+    transition: var(--transition);
+    border: 1px solid #1a3e3e;
+}
+
+.button:hover {
+    color: var(--general-bg-button-footer);
+    background: var(--general-text-white);
+}
